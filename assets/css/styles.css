@@ -1,3 +1,4 @@
+
 .header {
   position: fixed;
   z-index: 10;
@@ -21,6 +22,11 @@
   width: 100px
 }
 
+.carousel-inner{
+  background-image: url("../img/fondospotify.jpg");
+  color: #ffffff;
+}
+
 .divider{
   height: 16px;
   width: 1px;
@@ -33,11 +39,7 @@
   border: solid blue;
   position: absolute;
 }
-.carousel-inner{
-  border: solid red;
-  height: 660px;
-  background-image: url("../img/fondospotify.jpg");
-}
+
 
 .carousel-item h1{
   color: #FFFFFF;
@@ -53,6 +55,7 @@
   padding: 10px 20px;
   letter-spacing: 2px;
   font-weight: 600;
+  margin: 10px;
 }
 .btn-free:hover {
   color: #FFFFFF;
@@ -73,6 +76,7 @@
   border-radius: 30px;
   padding: 10px 20px;
   letter-spacing: 2px;
+  margin: 10px;
 }
 
 .btn-premium:hover {
@@ -126,7 +130,7 @@ figcaption{
   background-color: #000000;
 }
 
-.lista-disp {
+.lista-disp, .list-menu {
   list-style-type: none;
   display: inline-block;
 }
@@ -144,9 +148,18 @@ figcaption{
 .card-body li {
   list-style-type: none;
 }
-/*@media screen and (max-width: 600px) {
-  * {
-    background-color: red;
+@media (max-width: 425px) {
+  .album img{
+    width: 50px;
+    height: 50px;
   }
 }
-*/
+
+@media (max-width: 768px) {
+  .album img{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+
